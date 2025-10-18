@@ -1,0 +1,6 @@
+from os import getenv
+
+
+OPENAI_API_KEY = getenv("OPENAI_API_KEY")
+GOOGLE_GEMINI_API_KEY = getenv("GOOGLE_GEMINI_API_KEY")
+META_LLAMA_API_KEY = getenv("META_LLAMA_API_KEY")
