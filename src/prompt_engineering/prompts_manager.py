@@ -53,6 +53,6 @@ class PromptManager:
 
             return self.__PROMPTS[prompt_type][persona]
 
-        except Exception as exception:
-            raise Exception("Error while managing the prompt: ", str(exception))
+        except (Exception, KeyError, ValueError) as exception:
+            raise Exception("Error while managing the prompt: ", str(exception)) from exception
 
